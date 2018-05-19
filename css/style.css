@@ -1,38 +1,34 @@
 html, body {
   padding: 0;
   margin: 0;
-
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .container {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 10px;
+  font-size: 0;
+  border: 2px red solid;
 }
-
-
-
+/* HEADER */
 header {
   padding-top: 60px;
   padding-bottom: 30px;
   background-color: #fcdb00;
 }
 
-header .container {
-  font-size: 0;
-}
-
 .logo {
   display: inline-block;
-  width: 30%;
+  width: 160px;
   vertical-align: middle;
 }
 
 .main-navigation {
   display: inline-block;
-  width: 70%;
-  vertical-align: middle;
+  min-width: 360px;
+  float: right;
+  padding-top: 24px;
 }
 
 .menu {
@@ -44,7 +40,7 @@ header .container {
 
 .menu li {
   display: inline-block;
-  margin-right: 70px;
+  margin-right: 72px;
 }
 
 .menu li:last-child {
@@ -52,27 +48,27 @@ header .container {
 }
 
 .menu li a {
+  text-decoration: none;
   color: #010101;
   font-size: 22px;
+  line-height: 20px;
   font-weight: 700;
-  text-decoration: none;
   transition: color .3s ease;
+  display: block;
 }
 
 .menu li a:hover {
   color: gray;
 }
 
-
-
-
+/* SLIDER */
 .slider {
   padding-top: 30px;
   padding-bottom: 50px;
   background-color: #fcdb00;
 }
 
-.slider .slide-content {
+.slide-content {
   margin-bottom: 44px;
   font-size: 0;
 }
@@ -80,19 +76,16 @@ header .container {
 .slider .slider-columns {
   vertical-align: middle;
   display: inline-block;
-  width: 50%;
+  padding: 0;
+  margin: 0;
+  width: 400px;
 }
 
 .slider .info {
-  padding-right: 9%;
   box-sizing: border-box;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-}
-
-.slider .image {
-  text-align: right;
 }
 
 .slider .title {
@@ -100,7 +93,7 @@ header .container {
   margin-bottom: 22px;
   font-size: 32px;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 18px;
 }
 
 .slider .subtitle {
@@ -143,6 +136,11 @@ header .container {
   line-height: 20px;
 }
 
+.slider .image {
+  text-align: center;
+  margin-left: 158px;
+}
+
 
 .slide-nav {
   margin: 0;
@@ -154,7 +152,6 @@ header .container {
 
 .slide-nav li {
   display: inline-block;
-  font-size: 16px;
 }
 
 .slide-nav button {
@@ -193,36 +190,16 @@ header .container {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .features {
-  padding-top: 118px;
+  padding-top: 78px;
   padding-bottom: 78px;
 }
 
-
-
 .header-section {
-
-	width: 715px;
+	width: 780px;
   margin: auto;
-
 	text-align: center;
+  border: 2px black solid;
 }
 
 .features .header-title {
@@ -230,6 +207,7 @@ header .container {
   font-weight: 700;
   line-height: 32px;
   color: #010101;
+  border: 2px black solid;
 }
 
 .features .header-subtitle {
@@ -237,6 +215,7 @@ header .container {
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
+  border: 2px black solid;
 }
 
 
