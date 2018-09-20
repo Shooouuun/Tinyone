@@ -7,81 +7,64 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <header>
-    <div class="container">
+  <header class="page-header">
+    <h1 class="visually-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+    <div class="page-header__inner">
+      <div class="page-header__top">
+        <a class="header-logo"><img src="img/logo.png" alt="Tinyone logo"></a>
+        <nav class="main-navigation">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">Features</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">Support</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="start-home">
+        <h2 class="visually-hidden">slider</h2>
+        <input id="slide-1" class="slide-1 visually-hidden" type="radio" name="toggle" checked>
+        <input id="slide-2" class="slide-2 visually-hidden" type="radio" name="toggle">
+        <input id="slide-3" class="slide-3 visually-hidden" type="radio" name="toggle">
+          <div class="slider-controls">
+            <label for="slide-1"></label>
+            <label for="slide-2"></label>
+            <label for="slide-3"></label>
+          </div>
 
-      <a class="logo" href="index.html">
-        <img src="img/logo.png" alt="Tinyone">
-      </a>
+          <div class="slide-content">
+            <article class="slide">
+              <div class="slider-content">
+                <h1 class="slider-title">Inspire your inspiration</h1>
+                <h4 class="sldier-subtitle">Simple to use for your app, products showcase&nbsp;and your inspiration</h4>
+                <p class="slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit</p>
+                <ul class="slider-icon">
+                  <li class="slider-icon__item">
+                    <a class="icon" href="http://www.apple.com" target="_blank">
+                      <i class="fab fa-apple" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="slider-icon__item">
+                    <a class="icon" href="http://www.android.com" target="_blank">
+                      <i class="fab fa-android" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="slider-icon__item">
+                    <a class="icon" href="http://www.windows.com" target="_blank">
+                      <i class="fab fa-windows" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <img class="slide-content__img" src="img/ipad.png" alt="Картинка с изображением ipad и логотипом сайта на экране" width="316" height="470">
+            </article>
+          </div>
 
-      <nav class="main-navigation">
-        <ul class="menu">
-          <li>
-            <a href="#">Features</a>
-          </li>
-          <li>
-            <a href="#">Support</a>
-          </li>
-          <li>
-            <a href="#">Blog</a>
-          </li>
-        </ul>
-      </nav>
-
+      </div>
     </div>
   </header>
 
   <main>
-    <section class="slider">
-      <div class="container">
-
-        <div class="slide-content">
-          <div class="slider-columns info">
-            <h1 class="title">Inspire your inspiration</h1>
-            <h2 class="subtitle">Simple to use for your app, products showcase and your inspiration</h2>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit</p>
-            <ul class="os">
-              <li>
-                <a href="http://www.apple.com" target="_blank">
-                  <i class="fab fa-apple" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a href="http://www.android.com" target="_blank">
-                  <i class="fab fa-android" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a href="http://www.windows.com" target="_blank">
-                  <i class="fab fa-windows" aria-hidden="true"></i>
-                </a>
-              </li>
-            </ul>
-
-          </div>
-
-          <div class="slider-columns image">
-            <img src="img/ipad.png" alt="Ipad">
-          </div>
-
-        </div>
-
-        <ul class="slide-nav">
-          <li>
-            <button class="active"><span>Slide 1</span></button>
-          </li>
-          <li>
-            <button><span>Slide 2</span></button>
-          </li>
-          <li>
-            <button><span>Slide 3</span></button>
-          </li>
-        </ul>
-
-      </div>
-    </section>
 
 
     <section class="features">
